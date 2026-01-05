@@ -14,8 +14,8 @@ window.onload = function () {
     }
 
     Button.addEventListener('click', () => {
-        Button.style.display = 'none';
-        MessageContainer.style.display = 'flex';
+        Button.style.display = 'flex';
+        MessageContainer.style.display = 'none';
         localStorage.setItem('messageOpen', 'true');
     });
 
