@@ -6,16 +6,16 @@ window.onload = function () {
     const messageState = localStorage.getItem('messageOpen');
 
     if (messageState === 'true') {
-        Button.style.display = 'none';
-        MessageContainer.style.display = 'flex';
+        Button.style.display = 'flex';
+        MessageContainer.style.display = 'none';
     } else {
         Button.style.display = 'none';
         MessageContainer.style.display = 'flex';
     }
 
     Button.addEventListener('click', () => {
-        Button.style.display = 'flex';
-        MessageContainer.style.display = 'none';
+        Button.style.display = 'none';
+        MessageContainer.style.display = 'flex';
         localStorage.setItem('messageOpen', 'true');
     });
 
